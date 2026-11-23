@@ -118,10 +118,14 @@ button { font: inherit; }
   isolation: isolate;
   overflow: hidden;
   color: #eef6f6;
-  background:
-    radial-gradient(120% 90% at 88% 4%, rgba(0, 160, 173, 0.55), transparent 58%),
-    radial-gradient(90% 80% at 4% 100%, rgba(0, 32, 38, 0.65), transparent 62%),
-    linear-gradient(132deg, #00707c 0%, #00606b 42%, #014650 74%, #03343a 100%);
+  background-color: #03343a;
+  background-image:
+    linear-gradient(96deg, rgba(0, 43, 50, 0.93) 0%, rgba(0, 58, 66, 0.88) 30%, rgba(0, 74, 83, 0.78) 58%, rgba(0, 47, 55, 0.8) 100%),
+    linear-gradient(180deg, rgba(1, 32, 38, 0.42) 0%, rgba(1, 32, 38, 0.12) 38%, rgba(1, 32, 38, 0.62) 100%),
+    url("banner.jpg");
+  background-position: center, center, center 44%;
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat;
 }
 
 .hero__pattern {
@@ -970,6 +974,13 @@ button { font: inherit; }
   body { font-size: 15.5px; }
 
   .hero__inner { grid-template-columns: minmax(0, 1fr); gap: 26px; padding-block: 34px 38px; }
+  .hero {
+    background-image:
+      linear-gradient(96deg, rgba(0, 43, 50, 0.94) 0%, rgba(0, 58, 66, 0.9) 32%, rgba(0, 74, 83, 0.82) 64%, rgba(0, 47, 55, 0.86) 100%),
+      linear-gradient(180deg, rgba(1, 32, 38, 0.46) 0%, rgba(1, 32, 38, 0.16) 38%, rgba(1, 32, 38, 0.66) 100%),
+      url("banner-1100.jpg");
+    background-position: center, center, 50% 44%;
+  }
   .hero__aside { display: flex; align-items: center; gap: 18px; text-align: left; }
   .portrait-wrap { width: 100px; margin: 0; flex: none; }
   .portrait-caption { margin-top: 0; }
