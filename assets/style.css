@@ -1,6 +1,7 @@
 /* ==========================================================================
-   缃椾笘鍑?路 涓汉绠€鍘?   鐗堝紡鍙傝€冿細University of Surrey staff profile (stone blue #00606b + mustard)
-   绾潤鎬併€佹棤澶栭儴璇锋眰锛岀洿鎺ョ敱 GitHub Pages 鎵樼
+   罗世凯 · 个人简历
+   版式参考：University of Surrey staff profile (stone blue #00606b + mustard)
+   纯静态、无外部请求，直接由 GitHub Pages 托管
    ========================================================================== */
 
 /* ---------- 1. Tokens ---------- */
@@ -137,7 +138,7 @@ button { font: inherit; }
 
 .hero__inner {
   display: grid;
-  grid-template-columns: minmax(0, 178px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 236px) minmax(0, 1fr);
   gap: clamp(32px, 5vw, 64px);
   align-items: center;
   padding-block: clamp(44px, 6vw, 78px) clamp(42px, 6vw, 72px);
@@ -147,7 +148,7 @@ button { font: inherit; }
 
 .portrait-wrap {
   position: relative;
-  width: clamp(124px, 13.5vw, 158px);
+  width: clamp(160px, 19vw, 214px);
   margin: 6px auto 0;
   aspect-ratio: 1;
 }
@@ -941,9 +942,9 @@ button { font: inherit; }
 
 /* ---------- 16. Responsive ---------- */
 @media (max-width: 980px) {
-  .hero__inner { grid-template-columns: 112px minmax(0, 1fr); gap: 30px; text-align: left; align-items: start; }
+  .hero__inner { grid-template-columns: 140px minmax(0, 1fr); gap: 30px; text-align: left; align-items: start; }
   .hero__aside { display: block; justify-self: start; text-align: center; }
-  .portrait-wrap { width: 100px; margin: 4px auto 0; }
+  .portrait-wrap { width: 124px; margin: 4px auto 0; }
   .portrait-caption { margin-top: 18px; }
 
   .hero__meta { grid-template-columns: minmax(0, 1fr); gap: 22px; }
@@ -970,7 +971,7 @@ button { font: inherit; }
 
   .hero__inner { grid-template-columns: minmax(0, 1fr); gap: 26px; padding-block: 34px 38px; }
   .hero__aside { display: flex; align-items: center; gap: 18px; text-align: left; }
-  .portrait-wrap { width: 82px; margin: 0; flex: none; }
+  .portrait-wrap { width: 100px; margin: 0; flex: none; }
   .portrait-caption { margin-top: 0; }
   .hero__name { letter-spacing: 0.06em; }
   .hero__latin { letter-spacing: 0.32em; }
