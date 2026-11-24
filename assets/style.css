@@ -781,6 +781,33 @@ button { font: inherit; }
   letter-spacing: 0.03em;
 }
 
+/* 亮点卡片：AI 与 Agent */
+.skill--feature {
+  grid-column: 1 / -1;
+  padding: clamp(22px, 3vw, 32px);
+  background:
+    radial-gradient(120% 160% at 100% 0%, rgba(0, 128, 140, 0.14), transparent 58%),
+    linear-gradient(135deg, rgba(0, 96, 107, 0.10), rgba(0, 96, 107, 0.025));
+  border-color: rgba(0, 96, 107, 0.22);
+}
+.skill--feature .skill__num {
+  color: var(--teal);
+  letter-spacing: 0.22em;
+}
+.skill--feature h3 { font-size: 1.18rem; }
+.skill__lead {
+  margin: 0 0 14px;
+  max-width: none;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: var(--body);
+  text-wrap: pretty;
+}
+.skill--feature .tags li {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0, 96, 107, 0.12);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -1149,6 +1176,16 @@ button { font: inherit; }
 
   .skill-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 18px; }
   .skill { padding: 0; }
+  .skill--feature {
+    grid-column: 1 / -1;
+    padding: 6px 8px;
+    background: #f4f7f7;
+    border: 1px solid #dfe6e6;
+    border-radius: 4px;
+  }
+  .skill--feature h3 { font-size: 9.2pt; }
+  .skill__lead { font-size: 8pt; margin: 0 0 3px; max-width: none; line-height: 1.5; }
+  .skill--feature .tags li { background: #fff; }
   .skill__num { display: none; }
   .skill h3 { font-size: 8.8pt; margin: 0 0 3px; color: #0b3d45; }
   .tags { gap: 3px; }
