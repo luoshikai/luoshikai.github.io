@@ -1042,7 +1042,7 @@ button { font: inherit; }
   .skip-link,
   .contact-card__actions,
   #news,
-  .contact-list li:last-child,
+  .contact-list__pdf,
   .disclosure > summary { display: none !important; }
 
   .container { max-width: none; padding-inline: 0; }
